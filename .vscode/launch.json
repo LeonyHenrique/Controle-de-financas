@@ -9,7 +9,7 @@
             "type": "coreclr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/src/ControleFacil.Api/bin/Debug/net7.0/ControleFacil.Api.dll",
+            "program": "${workspaceFolder}/src/ControleFacil.Api/bin/Debug/net8.0/ControleFacil.Api.dll",
             "args": [],
             "cwd": "${workspaceFolder}/src/ControleFacil.Api",
             "stopAtEntry": false,
