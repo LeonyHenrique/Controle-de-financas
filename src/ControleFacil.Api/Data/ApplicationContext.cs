@@ -13,7 +13,7 @@ namespace ControleFacil.Api.Data
 
         public ApplicationContext(DbContextOptions<ApplicationContext> options) : base(options) {}
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder) // modelo que ele vai se basear
         {
             modelBuilder.ApplyConfiguration(new UsuarioMap());
             modelBuilder.ApplyConfiguration(new NaturezaDeLancamentoMap());

@@ -27,10 +27,10 @@ app.Run();
 // Metodo que configrua as injeções de dependencia do projeto.
 static void ConfigurarInjecaoDeDependencia(WebApplicationBuilder builder)
 {
-    string? connectionString = builder.Configuration.GetConnectionString("PADRAO");
+    string? connectionString = builder.Configuration.GetConnectionString("PADRAO"); // busca a conectionstring lá no appsettings
     
     builder.Services.AddDbContext<ApplicationContext>(options =>
-        options.UseNpgsql(connectionString), ServiceLifetime.Transient, ServiceLifetime.Transient);
+        options.UseNpgsql(connectionString), ServiceLifetime.Transient, ServiceLifetime.Transient); //npgsql é o metodo que se conecta ao banco
 
     var config = new MapperConfiguration(cfg => {
         cfg.AddProfile<UsuarioProfile>();

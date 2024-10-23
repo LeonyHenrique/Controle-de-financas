@@ -5,7 +5,7 @@ Criar migrations
     dotnet ef migrations add CriarEntidadeUsuario
 
 Executar migrations
-    dotnet ef database updatedotnet ef database update
+    dotnet ef database update dotnet ef database update
 
 
 Passo a passo de como criar uma nova entidade:
